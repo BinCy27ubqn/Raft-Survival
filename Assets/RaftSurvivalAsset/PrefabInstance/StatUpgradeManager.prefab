@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1244660111667008
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4358083300059652}
+  - component: {fileID: 114747186355731379}
+  m_Layer: 0
+  m_Name: StatUpgradeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4358083300059652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244660111667008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114747186355731379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244660111667008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4381f475f965c50f185000d7421e954a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  upgrades:
+  - StatMultiplier: {fileID: 11246, guid: 21455ecd53869664892dd76a0f213d48, type: 2}
+    UpgradePanel: {fileID: 11366, guid: 21455ecd53869664892dd76a0f213d48, type: 2}
+    RequiredPlayerLevel: 0
+    MaxLevel: 10
+    Cost: 150
+    CostMultiplier: 150
+    DeltaStatMultiplier: 1
+    Name: Health
+  - StatMultiplier: {fileID: 11946, guid: 21455ecd53869664892dd76a0f213d48, type: 2}
+    UpgradePanel: {fileID: 11301, guid: 21455ecd53869664892dd76a0f213d48, type: 2}
+    RequiredPlayerLevel: 0
+    MaxLevel: 10
+    Cost: 150
+    CostMultiplier: 150
+    DeltaStatMultiplier: 1
+    Name: Damage
+  - StatMultiplier: {fileID: 11714, guid: 21455ecd53869664892dd76a0f213d48, type: 2}
+    UpgradePanel: {fileID: 11367, guid: 21455ecd53869664892dd76a0f213d48, type: 2}
+    RequiredPlayerLevel: 0
+    MaxLevel: 10
+    Cost: 150
+    CostMultiplier: 150
+    DeltaStatMultiplier: 0.1
+    Name: Income
+  currencySystem: {fileID: 11088, guid: 21455ecd53869664892dd76a0f213d48, type: 2}

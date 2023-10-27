@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1440310965108332
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4212441837303706}
+  - component: {fileID: 137919789616584348}
+  m_Layer: 0
+  m_Name: Earthworm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4212441837303706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440310965108332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &137919789616584348
+SkinnedMeshRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440310965108332}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 252575a2251e1dc49840dad5ced259f0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: ff1ad4b1c236447478ff2071b13c9777, type: 2}
+  m_Bones:
+  - {fileID: 4824182205963615, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4552514986840902, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4562613792584188, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4553058446971832, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4336680144109471, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4302320975507047, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4356602008985645, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4586569641000313, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4703783760646369, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4122788794821942, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4089164016055549, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4839521867955496, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4883638136259318, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  - {fileID: 4450859504736383, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 4552514986840902, guid: 118dffcc29126624b8b5c18a0f3e9894, type: 2}
+  m_AABB:
+    m_Center: {x: -0.7877397, y: 0.096649766, z: -1.0430813E-07}
+    m_Extent: {x: 1.0281166, y: 0.8058342, z: 0.35975218}
+  m_DirtyAABB: 0
