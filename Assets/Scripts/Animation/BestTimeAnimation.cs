@@ -9,5 +9,7 @@ public class BestTimeAnimation : MonoBehaviour
     void Start()
     {
         _anim.Play();
+        Debug.Log(gameObject.name + "ten cua t");
     }
+
 }

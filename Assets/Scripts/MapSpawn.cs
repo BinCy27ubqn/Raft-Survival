@@ -38,7 +38,6 @@ public class MapSpawn : MonoBehaviour
             _instanceMap = _newMap;
         }
 
-
         foreach(var tree in _treeInstances)
         {
             if(tree!= null)
@@ -49,10 +48,7 @@ public class MapSpawn : MonoBehaviour
                     Destroy(tree);
                 }
             }
-                
         }
-
-
 
         for (int i = 0; i < _treeInstances.Length; i++)
         {
@@ -64,8 +60,6 @@ public class MapSpawn : MonoBehaviour
         }
     }
 
-
-    
     public void InitializeTree()
     {
         _treeInstances = new GameObject[_treePrefabs.Length];

@@ -9,7 +9,6 @@ public class BossMovement : MonoBehaviour
     public float _speed;
     [SerializeField]
     private float _distanceToBossLookAtPlayer;
-    private GameObject bullet;
 
     [SerializeField]
     private Animator _animator;
@@ -59,7 +58,6 @@ public class BossMovement : MonoBehaviour
         }
     }
 
-
     public GameObject DetectionByEnemy(Transform transform)
     {
         float distanceClosest = Mathf.Infinity;
@@ -84,7 +82,6 @@ public class BossMovement : MonoBehaviour
                 transform.LookAt(shipModuleClosest.transform);
             }
         }
-
         return shipModuleClosest;
     }
 }

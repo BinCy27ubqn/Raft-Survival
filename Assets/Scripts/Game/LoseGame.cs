@@ -6,6 +6,7 @@ public class LoseGame : MonoBehaviour
 {
     [SerializeField]
     private GameObject _panelLoseGame;
+
     private void Update()
     {
         if (PlayerHealth.IsDie == true)

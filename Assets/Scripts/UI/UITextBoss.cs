@@ -8,7 +8,7 @@ public class UITextBoss : MonoBehaviour
     [SerializeField]
     private Text _textDamage;
 
-    private void Update()
+    private void Start()
     {
         _textDamage.text = ((int)BossHealth._damgeTaken).ToString();
     }

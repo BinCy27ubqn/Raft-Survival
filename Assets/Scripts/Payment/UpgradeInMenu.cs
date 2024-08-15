@@ -28,6 +28,7 @@ public class UpgradeInMenu : MonoBehaviour
 
     private void Start()
     {
+
         if (_healthCurrentLevelText != null && _healthNextLevelText != null)
         {
             _healthCurrentLevelText.text = PlayerPrefs.GetInt("HealthCurrentLevel").ToString();

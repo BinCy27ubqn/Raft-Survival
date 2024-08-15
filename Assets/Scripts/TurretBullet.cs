@@ -20,6 +20,8 @@ public class TurretBullet : MonoBehaviour
     private GameObject _damageUIBoss;
     private void Start()
     {
+        Debug.Log(gameObject.name);
+
         _rigidbody = gameObject.GetComponent<Rigidbody>();
         _rigidbody.velocity = transform.forward * _speedBullet;
 

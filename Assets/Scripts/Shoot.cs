@@ -11,6 +11,7 @@ public class Shoot : MonoBehaviour
     private Transform _shootPoint;
     void Start()
     {
+        Debug.Log(gameObject.name);
         _enemy = GameObject.FindGameObjectWithTag("Enemy");
     }
 

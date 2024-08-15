@@ -8718,7 +8718,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 761161934}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 70.5, y: 0, z: 0}
 --- !u!114 &958656323
 MonoBehaviour:
@@ -12207,6 +12207,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1241516632513104, guid: b52b2816a7870a94ab7b5b087189f617, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1376956893861657, guid: b52b2816a7870a94ab7b5b087189f617, type: 3}
       propertyPath: m_IsActive
       value: 1

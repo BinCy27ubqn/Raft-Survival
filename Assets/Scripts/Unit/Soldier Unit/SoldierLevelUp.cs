@@ -23,6 +23,7 @@ public class SoldierLevelUp : MonoBehaviour
     private GameObject _upgradeFX;
     private void Start()
     {
+        Debug.Log(gameObject.name);
         if (_CheckingLevel[0].activeSelf)
         {
             _currentLevel = 1;

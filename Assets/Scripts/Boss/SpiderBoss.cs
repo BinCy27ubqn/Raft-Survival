@@ -29,7 +29,6 @@ public class SpiderBoss : MonoBehaviour
     void Start()
     {
         _audio.Play();
-
         _timeInterval = Time.time;
         timeIntervalFor3bullet = Time.time;
     }
@@ -93,8 +92,6 @@ public class SpiderBoss : MonoBehaviour
         GameObject takeDamageUI = Instantiate(_damageUI, gameObject.transform.position + new Vector3(0, 1.5f, 0), _damageUI.transform.rotation);
         Destroy(takeDamageUI, 0.5f);
     }
-
-    
 
     private IEnumerator ShootBullet()
     {

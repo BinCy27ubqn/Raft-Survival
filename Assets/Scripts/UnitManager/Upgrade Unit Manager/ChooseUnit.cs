@@ -31,12 +31,11 @@ public class ChooseUnit : MonoBehaviour
         Play.isProtected = false;
         if(VariableStatic._unitPrefab != null)
         {
-            Instantiate(VariableStatic._unitPrefab, gameObject.transform.position -  new Vector3(0,0.26f,0), transform.rotation, gameObject.transform.parent);
+            Instantiate(VariableStatic._unitPrefab, gameObject.transform.position -  new Vector3(0,0.5f,0), transform.rotation, gameObject.transform.parent);
             Time.timeScale = 1f;
             _cameraZoom.transform.position = gameObject.transform.position;
         }
         LevelManager.isUpgrade = false;
-        //Destroy(gameObject);
     }
 
     private void OnTriggerEnter(Collider other)

@@ -15,6 +15,7 @@ public class UnitCardTemplate : MonoBehaviour
 
     [SerializeField]
     private int _serialNumber;
+
     [SerializeField]
     private GameObject _textUpgrade;
 

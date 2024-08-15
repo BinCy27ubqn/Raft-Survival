@@ -17,7 +17,7 @@ public class EnemyTakeDamage : MonoBehaviour
 
     public void DispayDamgageTaken()
     {
-        GameObject takeDamageUI = Instantiate(_damageUI, gameObject.transform.position + new Vector3(0,2f,0), _damageUI.transform.rotation);
+        GameObject takeDamageUI = Instantiate(_damageUI, gameObject.transform.position + new Vector3(0,2.5f,0), _damageUI.transform.rotation);
         Destroy(takeDamageUI, 1f);
     }
 }

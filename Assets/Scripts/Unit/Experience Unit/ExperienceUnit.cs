@@ -9,6 +9,7 @@ public class ExperienceUnit : MonoBehaviour
     
     void Start()
     {
+        Debug.Log(gameObject.name + "dadadawdawdawda");
         LevelManager.increaseExperience = 1.2f;
         _levelManager = GameObject.Find("PlayerRaft").GetComponent<LevelManager>();
         _levelManager._plusExperiencePoint = _levelManager._plusExperiencePoint * LevelManager.increaseExperience;

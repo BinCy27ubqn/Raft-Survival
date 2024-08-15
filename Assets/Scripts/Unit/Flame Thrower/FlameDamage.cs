@@ -9,12 +9,10 @@ public class FlameDamage : MonoBehaviour
     private GameObject _damageUI;
     [SerializeField]
     private GameObject _damageUIBoss;
-    GameObject boss;
 
     private void Start()
     {
         _timeInterval = Time.time;
-        
     }
 
     private void OnTriggerStay(Collider other)

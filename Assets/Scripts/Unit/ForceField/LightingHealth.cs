@@ -23,6 +23,7 @@ public class LightingHealth : MonoBehaviour
     private GameObject _particleSystem;
     private void Start()
     {
+        Debug.Log(gameObject.name);
         _currentHealth = _health;
     }
 

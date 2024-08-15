@@ -9,6 +9,7 @@ public class HighScore : MonoBehaviour
     private Text _highScoreText;
     void Start()
     {
+        Debug.Log(gameObject.name);
         Application.targetFrameRate = 60;
 
         int hightScore = PlayerPrefs.GetInt("HighestTime");
@@ -28,15 +29,15 @@ public class HighScore : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
-        /*if (PlayerPrefs.GetInt("HighestTime") <= Timer._curentTime)
+        *//*if (PlayerPrefs.GetInt("HighestTime") <= Timer._curentTime)
         {
             PlayerPrefs.SetInt("HighestTime", (int)Timer._curentTime);
             int minutes = Mathf.FloorToInt(PlayerPrefs.GetInt("HighestTime") / 60);
             int seconds = Mathf.FloorToInt(PlayerPrefs.GetInt("HighestTime") % 60);
             string timeString = string.Format("{0:00}:{1:00}", minutes, seconds);
             _highScoreText.text = timeString;
-        }*/
-    }
+        }*//*
+    }*/
 }

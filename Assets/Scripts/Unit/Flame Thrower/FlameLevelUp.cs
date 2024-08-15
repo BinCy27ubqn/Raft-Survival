@@ -19,8 +19,8 @@ public class FlameLevelUp : MonoBehaviour
     [SerializeField]
     private GameObject[] _CheckingLevel;
 
-    [SerializeField]
-    private LevelManager _levelManager;
+/*    [SerializeField]
+    private LevelManager _levelManager;*/
 
     [SerializeField]
     private GameObject _upgradeFX;

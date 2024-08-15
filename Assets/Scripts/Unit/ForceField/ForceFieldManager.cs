@@ -9,7 +9,6 @@ public class ForceFieldManager : MonoBehaviour
     void Start()
     {
         VariableStatic.isBuildForceField = true;
-
     }
 
     private void Update()

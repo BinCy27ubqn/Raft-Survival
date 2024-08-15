@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageUnit : MonoBehaviour
 {
-    private PlayerMovement _playerMovement;
+    //private PlayerMovement _playerMovement;
     [SerializeField]
     private DamageLevelUp _damageLevelUp;
     public static float ecreaseDamage = 0;
@@ -14,7 +14,6 @@ public class DamageUnit : MonoBehaviour
 
     void Start()
     {
-
         float damageWereIncrease = damageIncreaseByAttckUnit * ecreaseDamagePercent;
         ecreaseDamage = damageWereIncrease - damageIncreaseByAttckUnit;
         damageIncreaseByAttckUnit = damageWereIncrease;

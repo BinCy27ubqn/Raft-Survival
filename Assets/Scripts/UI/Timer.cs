@@ -14,18 +14,12 @@ public class Timer : MonoBehaviour
         _curentTime = Time.timeSinceLevelLoad - BossHealth.elapsedTime;
         _timerText = GetComponent<Text>();
         UpdateTimeToDisplay();
-
-
     }
 
     void Update()
     {
         _curentTime = Time.timeSinceLevelLoad - BossHealth.elapsedTime;
         UpdateTimeToDisplay();
-        /*if (SpawnEnemy.bossIsApper == false)
-        {
-            BossHealth.elapsedTime = 0;
-        }*/
     }
 
     private void UpdateTimeToDisplay()

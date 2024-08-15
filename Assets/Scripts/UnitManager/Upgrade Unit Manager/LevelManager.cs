@@ -49,17 +49,6 @@ public class LevelManager : MonoBehaviour
         if (other.gameObject.CompareTag("Experience"))
         {
             _pointExperience += _plusExperiencePoint;
-            /*_levelBar.value = (float)_pointExperience / _maxLevelUpExperience;
-
-            if (_pointExperience >= _maxLevelUpExperience)
-            {
-                _levelBar.value = 0;
-                _pointExperience = 0;
-                _currentLevel++;
-                _maxLevelUpExperience *= _experienceIncrease;
-                _levelText.text = "" + _currentLevel;
-                LevelUpUI();
-            }*/
         }
     }
 

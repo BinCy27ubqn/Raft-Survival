@@ -48,7 +48,7 @@ public class HealthLevelUP : MonoBehaviour
     {
         float healthWereIncrease = HealthUnit.healthIncreaseByHealthUnit * ecreaseHealthPercent;
         ecreaseHealth = healthWereIncrease - HealthUnit.healthIncreaseByHealthUnit;
-        DamageUnit.damageIncreaseByAttckUnit = healthWereIncrease;
+        HealthUnit.healthIncreaseByHealthUnit = healthWereIncrease;
     }
 
     private void enableUpgradeFX()

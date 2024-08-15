@@ -13,7 +13,6 @@ public class TreeCuter : MonoBehaviour
     [SerializeField]
     private GameObject _root;
 
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Tree"))

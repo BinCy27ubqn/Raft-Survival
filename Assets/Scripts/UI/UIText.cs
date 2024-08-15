@@ -8,7 +8,7 @@ public class UIText : MonoBehaviour
     [SerializeField]
     private Text _textDamage;
 
-    private void Update()
+    private void Start()
     {
         _textDamage.text = ((int)EnemyHealth._damgeTaken).ToString();
     }

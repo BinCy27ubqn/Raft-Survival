@@ -10,6 +10,7 @@ public class DisplayCoinEarn : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(gameObject.name);
         if (PlayerPrefs.GetInt("IncomeCurrentLevel") == 1)
         {
             _textCoinEarn.text = "+25 Coins";

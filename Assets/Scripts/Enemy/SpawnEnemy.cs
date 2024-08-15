@@ -88,15 +88,19 @@ public class SpawnEnemy : MonoBehaviour
         {
             InstancetiateEnemy(_enemyPahinhaNeon);
         }
-        if (((Timer._curentTime > 30 && Timer._curentTime < 40) || (Timer._curentTime > 90 && Timer._curentTime < 100)
-            || (Timer._curentTime > 150 && Timer._curentTime < 160) || (Timer._curentTime > 210 && Timer._curentTime < 220)
-            || (Timer._curentTime > 270 && Timer._curentTime < 280) || (Timer._curentTime > 330 && Timer._curentTime < 340)
-            || (Timer._curentTime > 390 && Timer._curentTime < 400) || (Timer._curentTime > 450 && Timer._curentTime < 460)
-            || (Timer._curentTime > 510 && Timer._curentTime < 520) || (Timer._curentTime > 570 && Timer._curentTime < 580)
-            || (Timer._curentTime > 630 && Timer._curentTime < 640) || (Timer._curentTime > 690 && Timer._curentTime < 700)
-            ) && bossIsApper == false)
+
+        float[] timeIntervals = { 30, 90, 150, 210, 270, 330, 390, 450, 510, 570, 630, 690 };
+
+        if (!bossIsApper)
         {
-            InstancetiateNewEnemy(0.6f);
+            foreach (float startTime in timeIntervals)
+            {
+                if (Timer._curentTime > startTime && Timer._curentTime < startTime + 10)
+                {
+                    InstancetiateNewEnemy(0.6f);
+                    break;
+                }
+            }
         }
         if ((Timer._curentTime > 540 && Timer._curentTime < 600) && bossIsApper == false)
         {

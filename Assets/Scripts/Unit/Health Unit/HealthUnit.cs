@@ -24,8 +24,6 @@ public class HealthUnit : MonoBehaviour
         healthIncreaseByHealthUnit = healthWereIncrease;
 
         HealthManager.increaseHealth += increaseHealth;
-
-
     }
 
     private void Update()

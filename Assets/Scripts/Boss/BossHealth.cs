@@ -38,14 +38,13 @@ public class BossHealth : MonoBehaviour
         GameObject healbarBoss = GameObject.Find("SliderHealthBoss(Clone)");
         slider = healbarBoss.GetComponent<Slider>();
 
-
         originalColor = _bossMaterial.color;
         blinkColor = new Color(255, 255, 2000);
     }
 
     private void Update()
     {
-        slider.value = _health/ _maxHealth;
+        slider.value = _health/_maxHealth;
     }
 
     public static float _damgeTaken;
@@ -77,8 +76,10 @@ public class BossHealth : MonoBehaviour
         Instantiate(_drop[1], gameObject.transform.position, _drop[0].transform.rotation);
         Instantiate(_drop[2], gameObject.transform.position + new Vector3(-0.7f, 0.7f), _drop[0].transform.rotation);
         Timer._timeBossDie = Timer._curentTime + 2;
+
         SpawnEnemy.bossIsApper = false;
         SpawnEnemy.boss1Die = true;
+
         Destroy(intanceHealth);
         Destroy(gameObject);
     }

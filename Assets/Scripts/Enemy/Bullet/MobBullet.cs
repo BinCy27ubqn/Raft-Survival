@@ -13,6 +13,7 @@ public class MobBullet : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log(gameObject.name);
         _rigidbody = gameObject.GetComponent<Rigidbody>();
         _rigidbody.velocity = transform.forward * _speedBullet;
         Destroy(gameObject, 4f);

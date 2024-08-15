@@ -26,9 +26,10 @@ public class Earthworm : MonoBehaviour
     {
         _audio.Play();
         _timeInterval = Time.time;
-        
     }
+
     float distance;
+
     void Update()
     {
         _player = _bossMovement.DetectionByEnemy(gameObject.transform);
@@ -65,8 +66,6 @@ public class Earthworm : MonoBehaviour
         {
             DispayDamgageTaken();
         }
-
-        
     }
 
     public void DispayDamgageTaken()

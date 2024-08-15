@@ -17,7 +17,6 @@ public class ShopColor : MonoBehaviour
 
     private void Start()
     {
-
         CheckRemovePanel("Color0", 0);
         CheckRemovePanel("Color1", 1);
         CheckRemovePanel("Color2", 2);

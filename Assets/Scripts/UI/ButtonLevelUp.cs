@@ -8,6 +8,7 @@ public class ButtonLevelUp : MonoBehaviour
     private LevelManager _levelManager;
     [SerializeField]
     private float _pointIncrease;
+
     public void LevelUpB()
     {
         _levelManager._pointExperience += _pointIncrease;
